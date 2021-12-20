@@ -1,8 +1,10 @@
+#lectura de los peces iniciales
 def readOGfishes():
 	f = open('input.txt', 'r')
 	line = f.readline()
 	return [int(val) for val in line.split(',')]
 
+#calculo de un nuevo dia
 def computeNewDay(fishes):
 	countNewFishes = 0
 	for i in range(len(fishes)):
