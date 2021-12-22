@@ -22,7 +22,7 @@ if __name__ == '__main__':
 	readPositions(positions)
 	#las ordenamos ascendientemente
 	positions = sort(positions)
-	#cogemos el valor medio 
+	#cogemos el valor mediano de las posiciones 
 	medNum = median(positions)
 	#calculamos el combustible respecto ese valor
 	print(calculateFuel(positions, medNum))
