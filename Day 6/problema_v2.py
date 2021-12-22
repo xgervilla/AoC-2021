@@ -31,6 +31,7 @@ if __name__ == '__main__':
 	fishesCount = countFishes(fishes)
 	#para el problema 1 cambiar de 256 a 80
 	for i in range(256):
+		#calculamos un nuevo dia
 		computeNewDay(fishesCount)
-		#obtenemos el numero de peces tras los 80 dias
+	#despues de los 256 dias, sumamos los peces de cada dia
 	print(sum(fishesCount))
