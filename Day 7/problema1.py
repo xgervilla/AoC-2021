@@ -1,4 +1,4 @@
-from numpy import sort, median, mean
+from numpy import sort, median
 
 def readPositions(positions):
 	f = open("input.txt", "r")
@@ -17,8 +17,8 @@ def calculateFuel(positions, posHor):
 if __name__ == '__main__':
 	positions = []
 	readPositions(positions)
-	#positions = sort(positions)
-	medNum = mean(positions)
+	positions = sort(positions)
+	medNum = median(positions)
 	print(medNum)
 
-	#print(calculateFuel(positions, medNum))
+	print(calculateFuel(positions, medNum))
